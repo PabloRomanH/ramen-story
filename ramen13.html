@@ -1,15 +1,25 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("img").load(isLoaded);
+  });
+
+  function isLoaded() {
+    $("audio")[0].play();
+  }
+  </script>
 </head>
 <body>
-  <audio controls autoplay>
-    <source src="sound/13.mp3" type="audio/mpeg" />
-    Your browser does not support the audio element.
-  </audio>
 	<img src="img/ramen story 13.png" usemap="#map">
   <map name="map">
     <area shape="rect" coords="356,162,505,191" alt="grab a bowl" href="ramen14.html" />
   </map>
+  <audio controls>
+    <source src="sound/13.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
 </body>
 </html>

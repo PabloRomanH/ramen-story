@@ -1,6 +1,16 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("img").load(isLoaded);
+	});
+
+	function isLoaded() {
+		$("audio")[0].play();
+	}
+	</script>
 </head>
 <body>
 	<img src="img/ramen story 02.png" usemap="#map">
@@ -9,7 +19,7 @@
 		<area shape="rect" coords="311,360,441,490" alt="no" href="ramen02-bis.html" />
 		<area shape="rect" coords="604,366,706,488" alt="?" href="ramen02-bis.html" />
 	</map>
-  <audio controls autoplay>
+  <audio controls>
     <source src="sound/02.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
   </audio>
